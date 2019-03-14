@@ -93,8 +93,8 @@ int check_status(){
 void setup() {
 
   //Set pin modes
-  pinMode(SWITCH, INPUT_PULLUP);
-  pinMode(POWERCUT, INPUT_PULLUP);
+  pinMode(SWITCH, OUTPUT);
+  pinMode(POWERCUT, OUTPUT);
 
   Serial.print("Waiting on GoTenna bootup...\n");
   delay(60000); // Wait a minute for GoTenna to boot up
